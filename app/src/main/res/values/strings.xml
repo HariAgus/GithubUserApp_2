@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Github Dicoding</string>
+    <string name="github_app">Github App</string>
+    <string name="search_username">Search Username</string>
+    <string name="name">Name</string>
+    <string name="indonesia">Indonesia</string>
+    <string name="google">Google</string>
+    <string name="user_name">User Name</string>
+    <string name="followers_">Followers %d</string>
+    <string name="following_">Following %d</string>
+    <string name="following">Following</string>
+    <string name="followers">Followers</string>
+    <string name="no_connection_internet">No Connection Internet</string>
+    <string name="detail_user">Detail User</string>
+    <string name="change_language">Change Language</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="please_search_username">Please Search Username...</string>
+    <string name="favorite">Favorite</string>
+    <string name="setting_reminder">Setting Reminder</string>
+</resources>

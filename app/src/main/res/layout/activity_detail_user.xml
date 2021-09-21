@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ui.detail.DetailUserActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleDetailImg"
+        android:layout_width="135dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="@dimen/margin_padding_large"
+        android:src="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDetailName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:fontFamily="@font/nunito_sans_semibold"
+        android:text="@string/name"
+        android:textColor="@color/textWhitePrimary"
+        android:textSize="@dimen/text_size_xxnormal"
+        app:layout_constraintEnd_toEndOf="@id/circleDetailImg"
+        app:layout_constraintStart_toStartOf="@id/circleDetailImg"
+        app:layout_constraintTop_toBottomOf="@id/circleDetailImg" />
+
+    <TextView
+        android:id="@+id/tvDetailUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dividerHeight"
+        android:fontFamily="@font/nunito_sans_semibold"
+        android:text="@string/user_name"
+        android:textColor="@color/textWhitePrimary"
+        android:textSize="@dimen/text_size_xnormal"
+        app:layout_constraintEnd_toEndOf="@id/tvDetailName"
+        app:layout_constraintStart_toStartOf="@id/tvDetailName"
+        app:layout_constraintTop_toBottomOf="@id/tvDetailName" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dividerHeight"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/tvDetailUserName"
+        app:layout_constraintStart_toStartOf="@id/tvDetailUserName"
+        app:layout_constraintTop_toBottomOf="@id/tvDetailUserName">
+
+        <ImageView
+            android:id="@+id/image_detail_location"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_location_on_24" />
+
+        <TextView
+            android:id="@+id/tvDetailLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dividerHeight"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:text="@string/indonesia"
+            android:textColor="@color/textWhitePrimary"
+            android:textSize="@dimen/text_size_xnormal" />
+
+        <ImageView
+            android:id="@+id/image_detail_company"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:src="@drawable/ic_home_work_24" />
+
+        <TextView
+            android:id="@+id/tvDetailCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dividerHeight"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:text="@string/google"
+            android:textColor="@color/textWhitePrimary"
+            android:textSize="@dimen/text_size_xnormal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dividerHeight"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/linear_layout_first"
+        app:layout_constraintStart_toStartOf="@id/linear_layout_first"
+        app:layout_constraintTop_toBottomOf="@id/linear_layout_first">
+
+        <TextView
+            android:id="@+id/tvDetailFollowers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:text="@string/followers_"
+            android:textColor="@color/textWhitePrimary"
+            android:textSize="@dimen/text_size_xnormal" />
+
+
+        <TextView
+            android:id="@+id/tvDetailFollowing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:text="@string/following_"
+            android:textColor="@color/textWhitePrimary"
+            android:textSize="@dimen/text_size_xnormal" />
+
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabsLayoutDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear_layout_second"
+        app:tabTextColor="@color/textWhitePrimary" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerDetail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabsLayoutDetail" />
+
+    <ProgressBar
+        android:id="@+id/progressBarDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fbFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/icon_wh_fab"
+        android:layout_marginTop="@dimen/dividerHeight"
+        android:src="@drawable/ic_favorite_border"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Github Dicoding</string>
+    <string name="github_app">Github App</string>
+    <string name="search_username">Search Username</string>
+    <string name="name">Nama</string>
+    <string name="indonesia">Indonesia</string>
+    <string name="google">Google</string>
+    <string name="user_name">Nama User</string>
+    <string name="followers_">Pengikut %d</string>
+    <string name="following_">Mengikuti %d</string>
+    <string name="following">Mengikut</string>
+    <string name="followers">Pengikut</string>
+
+    <string name="no_connection_internet">Tidak ada koneksi</string>
+    <string name="detail_user">Detail User</string>
+    <string name="change_language">Ubah Bahasa</string>
+    <string name="enter_username">Masukan Nama Pengguna</string>
+    <string name="please_search_username">Silahkan Cari Nama Pengguna…</string>
+    <string name="favorite">Favorite</string>
+    <string name="setting_reminder">Pengaturan Pengingat</string>
+</resources>
